@@ -3,8 +3,8 @@ import pickle
 
 model = pickle.load(open("smp.pkl", "rb"))
 
-st.set_page_config(page_title="Student Marks Predictor", page_icon="🎓", layout="centered")
-st.title("🎓 Student Marks Predictor")
+st.set_page_config(page_title="SmartGrades Predictor", page_icon="🎓", layout="centered")
+st.title("🎓 SmartGrades Predictor")
 st.write("This app predicts student marks based on study hours using a trained Machine Learning model.")
 st.subheader("📘 Enter Study Hours")
 sh = st.number_input("Study Hours", min_value=0.0, max_value=12.0, step=0.5)
